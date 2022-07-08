@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
-
+import "./Menus.css"
 export default class Menus extends Component {
     render() {
         return (
             <>
-                <Navbar collapseOnSelect expand="lg" bg="white">
+                <Navbar collapseOnSelect expand="lg" bg="white" className='mg-b'>
                     <Container>
                         <Navbar.Brand href="#home">RUNLOS.com</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -14,7 +14,7 @@ export default class Menus extends Component {
                                 <Nav.Link href="#features">Home</Nav.Link>
                                 <Nav.Link href="#pricing">About Us</Nav.Link>
                                 <NavDropdown title="Front End" id="collasible-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Html💗</NavDropdown.Item>
+                                    <NavDropdown.Item href="#action/3.1">Html</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.2">Css💗</NavDropdown.Item>
                                     <NavDropdown.Item href="#action/3.3">Java Script💗</NavDropdown.Item>
                                     <NavDropdown.Divider />
